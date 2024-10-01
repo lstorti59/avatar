@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convai Avatar</title>
+    <script src="https://cdn.convai.com/convai.min.js"></script>
+</head>
+<body>
+    <div id="convai-container"></div>
+    <script>
+        const apiKey = "6d17b994bb7ae91ed23ec7002e11e72f";
+        const characterId = "db1a742e-77db-11ef-aa31-42010a7be011";
+
+        Convai.createCharacter({
+            apiKey: apiKey,
+            characterId: characterId,
+            container: document.getElementById('convai-container'),
+            width: 800,
+            height: 600
+        });
+    </script>
+</body>
+</html>
